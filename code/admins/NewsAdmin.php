@@ -19,6 +19,14 @@ class NewsAdmin extends ModelAdmin {
 	private static $menu_title = 'News';
 	
 	private static $menu_icon = '/silverstripe-newsmodule/images/newspaper.png';
+        
+        
+        
+        public function init() {
+            parent::init();
+            
+            $this->showImportForm = false;
+        }
 	
 	/**
 	 * Add the sortorder to tags. I guess tags are sortable now.
