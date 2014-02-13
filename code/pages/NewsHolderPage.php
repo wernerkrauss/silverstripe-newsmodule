@@ -92,8 +92,8 @@ class NewsHolderPage_Controller extends Page_Controller {
 		parent::init();
 		$this->needsRedirect();
 		// I would advice to put these in a combined file, but it works this way too.
-		Requirements::javascript('silverstripe-newsmodule/javascript/jquery.tagcloud.js');
-		Requirements::javascript('silverstripe-newsmodule/javascript/newsmodule.js');
+//		Requirements::javascript('silverstripe-newsmodule/javascript/jquery.tagcloud.js');
+//		Requirements::javascript('silverstripe-newsmodule/javascript/newsmodule.js');
 		setlocale(LC_ALL, i18n::get_locale());
 	}
 
