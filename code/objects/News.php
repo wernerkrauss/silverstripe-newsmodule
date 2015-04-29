@@ -350,11 +350,11 @@ class News extends DataObject implements PermissionProvider
 	 */
 	public function getPublished()
 	{
-		i18n::get_date_format();
+		$format = i18n::get_date_format();
 		$locale = i18n::get_locale();
 		$date = new Zend_Date();
 		$date->set($this->PublishFrom, null, $locale);
-		return substr($date->getDate($locale), 0, -9);
+		return $date->toString($format, null, $locale);
 	}
 
 	/**
